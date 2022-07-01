@@ -1,0 +1,123 @@
+
+/*main*/
+main .banner{
+	width: 100%;
+	height: 579px;
+}
+main .banner img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+main .news{
+	width: 100%;
+	height: 465px;
+	left: 0px;
+	top: 812px;
+	margin-top:50px;
+	background: rgba(209, 233, 233, 0.54);
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+}
+main .news .left{
+	width: 50%;
+}
+main .news .left img{
+	width: 599px;
+	height: 373px;
+}
+main .news .right{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+main .news .right .title{
+	text-align:center;
+}
+main .news .right img{
+	margin: 0 auto;
+	display: block;
+	width: 150px;
+	height: 50px;
+	object-fit: cover;
+}
+main .news .right ul{
+	list-style-type: none;
+	
+}
+main .news .right ul li{
+	margin-bottom: 20px;
+}
+main .news .right ul li a{
+	display: flex;
+	text-decoration: none;;
+	color:black;
+}
+main .news .right ul li a .time{
+	width: 30%;
+}
+main .news .right ul li a .article{
+	width: 70%;
+}
+/*main  product*/
+main .product{
+	text-align:center;
+	padding: 70px;
+}
+main .product >img{
+	width: 150px;
+	height: 50px;
+	object-fit: cover;
+}
+main .product ul{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+main .product ul li{
+	flex-basis: 30%;
+	padding: 10px;
+	position: relative;
+}
+main .product ul li img{
+	width: 100%;
+	
+}
+main .product ul li a{
+	position: absolute;
+	bottom:0;
+	left:0;
+	background: rgba(64, 128, 128, 0.65);
+	text-align:center;
+	width: calc(100% - 20px);
+	margin: 10px;
+	text-decoration: none;;
+	color:white;
+}
+/*show*/
+main .show{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: rgb(210, 210, 210);
+	display: flex;
+	padding: 50px;
+}
+main .show .left{
+	width: 40%;
+}
+main .show .left img{
+	width: 100%;
+	height: 776px;
+	object-fit: cover;
+}
+main .show .right{
+	width: 55%;
+	margin-left: 5%;
+}
+main .show .right img{
+	width: 100%;
+	height: 330px;
+}
