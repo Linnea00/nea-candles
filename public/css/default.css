@@ -5,6 +5,13 @@ body{
 header{
 	height: 150px;
 	position: relative;
+	display: flex;
+}
+header nav #hamburger{
+	display:none;
+}
+header nav{
+	width: 40%;
 }
 header nav ul {
 	list-style-type: none;
@@ -23,27 +30,33 @@ header nav ul  li a{
 	color:black;
 }
 header #logo{
-	position: absolute;
-	width: 137px;
-	height: 123px;
-	left: 50%;
-	top: 14px;
-	transform: translateX(-50%);
+	width: 20%;
+	text-align:center;
+	padding: 10px;
+	box-sizing: border-box;
 }
 header #logo img{
-	width: 100%;
+	width: 137px;
+	height: 123px;
+}
+header #shopping{
+	width: 40%;
+	display: flex;
+	justify-content:end;
+	align-items: center;
 }
 header #shopping ul{
 	list-style-type: none;
 	display: flex;
-	position: absolute;
-	width: 114px;
+	width: 150px;
 	height: 30.81px;
-	left: 1126px;
-	top: 30px;
+	justify-content:space-around;
+	align-items: center;
+	margin-right: 20px;
 }
 header #shopping ul li{
 	width:24.41px;
+	
 }
 header #shopping ul li img{
 	width:100%;
@@ -95,3 +108,37 @@ footer #community li a img{
 
 }
 
+@media screen and (max-width:376px){
+	header{
+		height: 80px;
+	}
+	header nav #hamburger{
+		display: flex;
+		margin-top: 20px;
+		margin-left: 10px;
+		
+	}
+	
+	header nav ul{
+		display:none;
+	}
+	header nav{
+		width: 33%;
+	}
+	header #logo{
+		width: 33%;
+	}
+	header #logo img{
+		width: 65px;
+		height: 59px;
+	}
+	header #shopping{
+		width: 33%;
+	}
+	header #shopping .shopping{
+		display:none;
+	}
+	header #shopping  ul li{
+		margin-left: 10px;
+	}
+}
