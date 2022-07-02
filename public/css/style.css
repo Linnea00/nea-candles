@@ -67,6 +67,10 @@ main .product{
 	text-align:center;
 	padding: 70px;
 }
+
+main .product .right{
+	display:none;
+}
 main .product >img{
 	width: 150px;
 	height: 50px;
@@ -101,7 +105,9 @@ main .product ul li a{
 main .show{
 	width: 100%;
 	box-sizing: border-box;
-	background-color: rgb(210, 210, 210);
+	background:url(../image/index_show_bg.png) no-repeat;
+	height:auto;
+	background-size:cover;
 	display: flex;
 	padding: 50px;
 }
@@ -120,4 +126,114 @@ main .show .right{
 main .show .right img{
 	width: 100%;
 	height: 330px;
+}
+
+@media screen and (max-width:376px){
+	main .banner{
+		height: 171px;
+	}
+	main .news{
+		flex-direction: column;
+		height:auto;
+		padding: 20px;
+	}
+	main .news .left{
+		order:2;
+		width: 100%;
+	}
+	main .news .right{
+		order:1;
+		width: 100%;
+	}
+	main .news  .right>img{
+		display:none;
+	}
+	main .news  .right .title{
+		text-align: center;
+	}
+	main .news  .right ul{
+		padding: 0;
+	}
+	main .news  .right ul li:nth-child(4){
+		display:none;
+	}
+	main .news .right ul li a .time{
+		width: 40%;
+	}
+	main .news .right ul li a .article{
+		width: 60%;
+	}
+	main .news .left img{
+		width: 100%;
+		height:auto;
+	}
+
+	/*product*/
+	main .product{
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	main .product >img{
+		display:none;
+	}
+
+	main .product .left{
+		width: 30%;
+		position: relative;
+	}
+	
+	main .product ul{
+		padding: 0;
+	}
+	main .product ul li{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-basis: 100%;
+	}
+	main .product ul li a{
+		margin: 0;
+		width: 100%;
+	}
+	main .product ul li a p{
+		margin: 0;
+		font-size: 12px;
+	}
+	main .product ul li:nth-child(5),
+	main .product ul li:nth-child(6){
+		display:none;
+	}
+	main .product .right{
+		width: 70%;
+		padding-left: 10px;
+		text-align:left;
+		font-size: 12px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	main .product .right .price{
+		margin-top: 10px;
+	}
+	main .show{
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+	}
+	main .show .left{
+		width: 100%;
+	}
+	main .show .left img{
+		height:auto;
+		margin-bottom: 20px;
+	}
+	main .show .right{
+		width: 100%;
+		margin-left: 0;
+	}
+	main .show .right img{
+		height:auto;
+		margin-bottom: 20px;
+	}
 }
