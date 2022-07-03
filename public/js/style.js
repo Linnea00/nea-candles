@@ -1,0 +1,7 @@
+$(function(){
+	$("#hamburger").click(function(){
+		//$("header nav >ul").stop().animate({"display":"block"},500)
+		//$("header nav >ul").css("display","block");
+		$("header nav >ul").stop().slideToggle();
+	})
+})
