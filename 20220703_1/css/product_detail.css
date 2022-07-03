@@ -1,0 +1,30 @@
+main .product_detail{
+	width: 95%;
+	margin: 0 auto;
+}
+main .product_detail .content{
+	display: flex;
+}
+main .product_detail .content >.left{
+	width: 30%;
+}
+main .product_detail .content >.left img{
+	width: 100%;
+}
+main .product_detail .content >.right{
+	width: 70%;
+	padding: 0 20px;;
+}
+main .product_detail .content >.right .price{
+	color: #408080;
+	display: flex;
+	margin: 0;
+}
+main .product_detail .content >.right .price p{
+	line-height:35px;
+	
+}
+main .product_detail .content >.right .price input{
+	line-height: 35px;
+	margin-left: 50px;
+}
