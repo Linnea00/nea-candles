@@ -29,6 +29,9 @@ header nav ul  li a{
 	text-decoration: none;
 	color:black;
 }
+header nav ul li a:hover{
+	color:#408080;
+}
 header #logo{
 	width: 20%;
 	text-align:center;
@@ -118,6 +121,7 @@ footer #community li a img{
 		
 	}
 	
+	
 	header nav ul {
 		list-style-type: none;
 		display:none;
@@ -139,6 +143,7 @@ footer #community li a img{
 		text-decoration: none;
 		color:white;
 	}
+
 	header nav{
 		width: 33%;
 	}
