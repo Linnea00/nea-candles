@@ -1,0 +1,32 @@
+
+main .news{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+main .news li{
+	flex-basis: 50%;
+	margin-bottom: 50px;
+}
+main .news li a{
+	display: flex;
+	text-decoration: none;;
+	color:black;
+}
+main .news li a .left{
+	width: 35%;
+	height: 371px;
+}
+main .news li a .left img{
+	height: 100%;
+	width: 100%;
+}
+main .news li a .right{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+main .news li a .right div{
+	height: 50%;
+}
