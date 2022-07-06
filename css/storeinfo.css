@@ -1,0 +1,83 @@
+main #storeinfo{
+	list-style-type: none;
+	padding: 0 50px;
+
+}
+main #storeinfo  li{
+	width: 100%;
+	height: 365px;
+	padding: 20px 0;
+	box-sizing: border-box;
+	background: rgba(209, 233, 233, 0.54);
+	margin: 25px 0;
+	display: flex;
+}
+main #storeinfo  li .left ,
+main #storeinfo  li .right{
+	width: 50%;
+	
+}
+main #storeinfo  li .content{
+	padding: 20px 50px;
+
+}
+main #storeinfo  li:nth-child(even) .right{
+	text-align:right;
+}
+main #storeinfo  li .content .name{
+	font-weight: 700;
+}
+
+@media screen and (max-width:768px){
+	main #storeinfo{
+		padding: 0 ;
+	}
+	main #storeinfo li{
+		height:auto;
+		display: flex;
+		flex-direction: column;
+	}
+	main #storeinfo li .left, main #storeinfo li .right, main #storeinfo li .left, main #storeinfo li .left{
+		width: 90%;
+		margin: 0 auto;
+	}
+	main #storeinfo li img{
+		width: 100%;
+		height:300px;
+		overflow: hidden;	
+		object-fit: cover;
+	}
+	main #storeinfo li:nth-child(even) .left,
+	main #storeinfo li:nth-child(odd) .right{
+		background-color: #fff;
+	}
+	main #storeinfo li:nth-child(even) .left{
+		order:2;
+	}
+	main #storeinfo li:nth-child(even) .right{
+		order:1;
+	}
+	/* main #storeinfo li .left, main #storeinfo li .right img,
+	main #storeinfo li .left, main #storeinfo li .left img{
+		width: 100%;
+		height:250px;
+		overflow: hidden;
+		object-fit: cover;
+	}*/
+	
+	
+	/* main #storeinfo li .left, main #storeinfo li .right,
+	main #storeinfo li .left, main #storeinfo li .left{
+		width: 50%;
+		box-sizing: border-box;
+	}  */
+	/* main #storeinfo li .left, main #storeinfo li:nth-child(odd) .left{
+		order:2;
+	}
+	main #storeinfo li .left, main #storeinfo li:nth-child(odd) .right{
+		order:1;
+	} */
+	main #storeinfo li .content{
+		padding: 10px;
+	}
+}
