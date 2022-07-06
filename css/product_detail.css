@@ -1,0 +1,89 @@
+main .product_detail{
+	width: 95%;
+	margin: 0 auto;
+}
+main .product_detail .content{
+	display: flex;
+}
+main .product_detail .content >.left{
+	width: 30%;
+}
+main .product_detail .content >.left img{
+	width: 100%;
+}
+main .product_detail .content >.right{
+	width: 70%;
+	padding: 0 20px;;
+}
+main .product_detail .content >.right .title{
+	font-weight: 700;
+}
+main .product_detail .content >.right .price{
+	color: #408080;
+	display: flex;
+	margin: 0;
+}
+main .product_detail .content >.right .price p{
+	line-height:35px;
+	margin: 0;
+}
+main .product_detail .content >.right .price select{
+	width: 150px;
+	line-height: 35px;
+	margin-left: 50px;
+	border:rgba(64, 128, 128, 0.65) 1px solid
+}
+main .product_detail .content >.right .button input{
+	width: 150px;
+	height:50px;
+	line-height:50px;
+	background: rgba(64, 128, 128, 0.65);
+	border-radius: 10px;
+	color:white;
+	border:none;
+	left: 100px;
+	top:50px;
+	position: relative;
+}
+main .product_detail .info{
+	padding:50px 10px 10px;
+	margin:50px 0;
+	background: rgba(209, 233, 233, 0.54);
+}
+
+@media screen and (max-width:768px){
+	main .product_detail{
+		width: 100%;
+		margin: 0;
+	}
+	main .product_detail .content{
+		background: rgba(209, 233, 233, 0.54);
+		padding: 50px 0;
+	}
+	main .product_detail .content >.left,
+	main .product_detail .content >.right{
+		width: 50%;
+		box-sizing: border-box;
+	}
+	main .product_detail .content >.right .infomation,
+	main .product_detail .content >.right .price p{
+		display:none;
+	}
+	
+	main .product_detail .content >.right .price select{
+		width: 80px;
+		margin-left: 0;
+	}
+	main .product_detail .content >.right .button input{
+		left:0;
+		top:10px;
+		width: 100px;
+		border-radius: 0;
+		height:40px;
+		line-height:40px;
+	}
+	main .product_detail .info{
+		background: none;
+		padding: 0 20px;
+	}
+}
