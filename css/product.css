@@ -1,0 +1,123 @@
+
+main .option{
+	width: 95%;
+	list-style-type: none;
+	display: flex;
+}
+main .option li{
+	box-sizing: border-box;
+	width: 129.75px;
+	height: 60px;
+	background: rgba(64, 128, 128, 0.65);
+	border: 1px solid #FFFFFF;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main .option li a{
+	color:white;
+	text-decoration: none;
+}
+main #product{
+	width: 95%;
+	margin:0 auto;
+	display: flex;
+}
+main #product >.left{
+	width: 20%;
+	height:auto;
+	background: rgba(209, 233, 233, 0.54);
+	list-style-type: none;
+	padding: 20px  0;
+}
+main #product >.left  li{
+	width: 100%;
+	
+	margin-bottom: 20px;
+	text-align:center;
+}
+main #product >.left  li a{
+	width: 70%;
+	
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	
+	background: rgba(64, 128, 128, 0.65);
+	border: 1px solid #FFFFFF;
+	border-radius: 10px;
+	text-decoration: none;
+	color:white;
+}
+
+/* product  right*/
+main #product >.right{
+	width: 80%;
+}
+
+main #product >.right ul{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+main #product >.right ul li{
+	flex-basis: 31%;
+	padding: 10px;
+}
+main #product >.right ul li >.left{
+	width: 100%;
+	position: relative;
+}
+main #product >.right ul li >.left img{
+	width: 100%;
+}
+main #product >.right ul li >.left a{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	text-decoration: none;
+	color:white;
+	bottom:0;
+	left:0;
+	background: rgba(64, 128, 128, 0.65);
+	text-align:center;
+	
+}
+main #product >.right ul li > .right{
+	text-align:center;
+}
+main #product >.right ul li > .right *{
+	line-height:35px;
+}
+main #product >.right ul li > .right .price{
+	color: #408080;
+}
+
+@media screen and (max-width:768px){
+	main .option{
+		width: 100%;
+		padding: 0 20px;
+		display: flex;
+		justify-content: space-between;
+		box-sizing: border-box;
+	}
+	main .option li{
+		height: 50px;
+	}
+	main #product >.left{
+		display:none;
+	}
+	main #product >.right{
+		padding: 0 10px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	main #product >.right ul{
+		padding: 0;
+	}
+	main #product >.right ul li{
+		flex-basis: 100%;
+	}
+}
