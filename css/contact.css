@@ -1,0 +1,85 @@
+.contact{
+	width: 95%;
+	height:791px;
+	margin:0 auto;
+	padding: 50px;
+	box-sizing: border-box;
+	background: rgba(209, 233, 233, 0.54);
+	margin-bottom: 50px;
+}
+.contact .title{
+	font-size:36px;
+}
+.contact form{
+	width: 100%;
+	display: flex;
+}
+.contact form label{
+	background: rgba(64, 128, 128, 0.69);
+	color:white;
+	padding: 10px;
+}
+.contact form .left input{
+	margin-bottom: 20px;
+	height: 35px;
+}
+.contact form .left input:last-child{
+	margin-bottom: 0;
+}
+.contact form .left ,
+.contact form .right{
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+
+}
+.contact form .right{
+	margin-left: 5%;
+	position: relative;
+}
+
+.contact form .right textarea{
+	text-align:left;
+	line-height: 35px;
+}
+
+.contact form .right input{
+	position: absolute;
+	bottom:0;
+	left:50%;
+	transform: translateX(-50%);
+	width: 217px;
+	height: 48px;
+	background: rgba(64, 128, 128, 0.69);
+	color:white;
+	outline: none;
+	border:0;
+}
+
+@media screen and (max-width:768px){
+	.contact{
+		background: none;
+		padding: 10px;
+	}
+	.contact .title{
+		font-size: 1.2rem;
+	}
+	.contact form{
+		flex-direction: column;
+	}
+	.contact form .left, .contact form .left,
+	.contact form .left, .contact form .right{
+		width: 100%;
+	}
+	.contact form .right{
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.contact form .right input{
+		bottom:-100px;
+	}
+	.contact form input{
+		background: rgba(209, 233, 233, 0.54);
+		border:none;
+	}
+}
