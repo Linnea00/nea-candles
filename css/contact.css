@@ -22,6 +22,7 @@
 .contact form .left input{
 	margin-bottom: 20px;
 	height: 35px;
+	border:0;
 }
 .contact form .left input:last-child{
 	margin-bottom: 0;
@@ -37,12 +38,6 @@
 	margin-left: 5%;
 	position: relative;
 }
-
-.contact form .right textarea{
-	text-align:left;
-	line-height: 35px;
-}
-
 .contact form .right input{
 	position: absolute;
 	bottom:0;
@@ -53,6 +48,12 @@
 	background: rgba(64, 128, 128, 0.69);
 	color:white;
 	outline: none;
+	border:0;
+}
+.contact form .right textarea{
+	text-align:left;
+	line-height: 35px;
+	background: white;
 	border:0;
 }
 
@@ -81,5 +82,9 @@
 	.contact form input{
 		background: rgba(209, 233, 233, 0.54);
 		border:none;
+	}
+	.contact form .right textarea{
+		background: rgba(209, 233, 233, 0.54);
+		border:0;
 	}
 }
